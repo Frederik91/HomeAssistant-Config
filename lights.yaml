@@ -1,0 +1,53 @@
+- platform: group
+  name: Stuelys
+  entities:
+    - light.everspring_ad147_plugin_dimmer_module_level
+    - light.qubino_zmnhdd1_flush_dimmer_level_3
+    
+- platform: group
+  name: Kjøkkenlys
+  entities:
+    - light.qubino_zmnhdd1_flush_dimmer_level_2
+    - light.qubino_zmnhdd1_flush_dimmer_level
+    
+- platform: group
+  name: Taklampe soverom
+  entities:
+    - light.lyspaere_1_soverom
+    - light.lyspaere_2_soverom
+    - light.lyspaere_3_soverom
+    - light.lyspaere_4_soverom
+    - light.lyspaere_5_soverom
+    - light.lyspaere_6_soverom
+    
+- platform: group
+  name: Taklampe kaldkjeller
+  entities:
+    - light.lyspaere_1_kaldkjeller_2
+    - light.lyspaere_2_kaldkjeller
+    - light.lyspaere_3_kaldkjeller
+    - light.lyspaere_4_kaldkjeller
+    - light.lyspaere_5_kaldkjeller
+    - light.lyspaere_6_kaldkjeller
+
+- platform: group
+  name: Taklampe kontor Signe
+  entities:
+    - light.lyspaere_1_kontor_signe
+    - light.lyspaere_2_kontor_signe
+    - light.lyspaere_3_kontor_signe
+    
+- platform: switch
+  name: Overskap kjøkken
+  entity_id: switch.lys_overskap
+  
+- platform: group
+  name: Spotter
+  entities:
+    - light.fibaro_system_fgd212_dimmer_2_level_7
+    - light.fibaro_system_fgd212_dimmer_2_level_9
+    - light.fibaro_system_fgd212_dimmer_2_level_11
+    - light.fibaro_system_fgd212_dimmer_2_level_3
+    - light.everspring_ad147_plugin_dimmer_module_level
+  
+#- platform: ring

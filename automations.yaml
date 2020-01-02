@@ -1,0 +1,12 @@
+- id: '1577992828408'
+  alias: Start alarm
+  description: ''
+  trigger:
+  - entity_id: input_boolean.alarm_1_soundnow
+    from: 'false'
+    platform: state
+    to: 'true'
+  condition: []
+  action:
+  - entity_id: light.spotter
+    service: light.turn_on

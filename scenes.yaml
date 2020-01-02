@@ -1,0 +1,1654 @@
+- id: '1577574813682'
+  name: Frokost
+  entities:
+    light.everspring_ad147_plugin_dimmer_module_level:
+      brightness: 28
+      friendly_name: Spot peis
+      node_id: 13
+      power_consumption: 3
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594260848641'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_11:
+      brightness: 26
+      friendly_name: Spotter spisestue
+      node_id: 18
+      power_consumption: 1.9
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594344734721'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_13:
+      brightness: 33
+      friendly_name: Taklampe spisestue
+      node_id: 19
+      power_consumption: 5.7
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594361511937'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_15:
+      brightness: 3
+      friendly_name: Taklampe kjøkkenøy
+      node_id: 20
+      power_consumption: 3.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594378289153'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_3:
+      brightness: 21
+      friendly_name: Spotter stue
+      node_id: 14
+      power_consumption: 1.1
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594277625857'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_7:
+      brightness: 15
+      friendly_name: Spotter kjøkken
+      node_id: 16
+      power_consumption: 12.7
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594311180289'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_9:
+      brightness: 3
+      friendly_name: Spotter vindu
+      node_id: 17
+      power_consumption: 3.8
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594327957505'
+      value_index: 0
+      value_instance: 1
+    zwave.everspring_ad147_plugin_dimmer_module:
+      application_version: Unknown
+      averageRequestRTT: 25
+      averageResponseRTT: 36
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 13
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 175
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:51:26:916 '
+      receivedUnsolicited: 125
+      retries: 5
+      sentCnt: 83
+      sentFailed: 1
+      sentTS: '2020-01-02 16:51:21:625 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_2:
+      application_version: Unknown
+      averageRequestRTT: 29
+      averageResponseRTT: 37
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 16
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 224
+      receivedDups: 7
+      receivedTS: '2020-01-02 16:50:35:623 '
+      receivedUnsolicited: 156
+      retries: 7
+      sentCnt: 107
+      sentFailed: 2
+      sentTS: '2020-01-02 16:50:29:710 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_3:
+      application_version: Unknown
+      averageRequestRTT: 70
+      averageResponseRTT: 63
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 77
+      lastResponseRTT: 82
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 17
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 240
+      receivedDups: 9
+      receivedTS: '2020-01-02 16:49:35:794 '
+      receivedUnsolicited: 170
+      retries: 7
+      sentCnt: 115
+      sentFailed: 0
+      sentTS: '2020-01-02 16:49:30:260 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_4:
+      application_version: Unknown
+      averageRequestRTT: 42
+      averageResponseRTT: 76
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 30
+      lastResponseRTT: 44
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 19
+      - 20
+      - 21
+      node_id: 18
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 217
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:49:35:645 '
+      receivedUnsolicited: 154
+      retries: 2
+      sentCnt: 98
+      sentFailed: 0
+      sentTS: '2020-01-02 16:49:29:527 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_5:
+      application_version: Unknown
+      averageRequestRTT: 25
+      averageResponseRTT: 39
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 20
+      - 21
+      node_id: 19
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 201
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:50:35:602 '
+      receivedUnsolicited: 147
+      retries: 6
+      sentCnt: 92
+      sentFailed: 0
+      sentTS: '2020-01-02 16:50:29:611 '
+      state: ready
+    zwave.fibaro_system_fgwpe_f_wall_plug_gen5:
+      application_version: Unknown
+      averageRequestRTT: 34
+      averageResponseRTT: 36
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: Oppvaskmaskin
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      node_id: 20
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 159
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:49:36:263 '
+      receivedUnsolicited: 124
+      retries: 5
+      sentCnt: 59
+      sentFailed: 3
+      sentTS: '2020-01-02 16:49:29:813 '
+      state: ready
+    zwave.unknown_node_14:
+      application_version: Unknown
+      averageRequestRTT: 28
+      averageResponseRTT: 42
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 26
+      lastResponseRTT: 43
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 14
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 223
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:49:35:331 '
+      receivedUnsolicited: 158
+      retries: 5
+      sentCnt: 101
+      sentFailed: 1
+      sentTS: '2020-01-02 16:49:29:992 '
+      state: ready
+- id: '1577743305732'
+  name: Natt
+  entities:
+    light.everspring_ad147_plugin_dimmer_module_level:
+      friendly_name: Spot peis
+      node_id: 13
+      power_consumption: 1.5
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594260848641'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_11:
+      friendly_name: Spotter spisestue
+      node_id: 18
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594344734721'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_13:
+      friendly_name: Taklampe spisestue
+      node_id: 19
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594361511937'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_15:
+      friendly_name: Taklampe kjøkkenøy
+      node_id: 20
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594378289153'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_3:
+      friendly_name: Spotter stue
+      node_id: 14
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594277625857'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_7:
+      friendly_name: Spotter kjøkken
+      node_id: 16
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594311180289'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_9:
+      friendly_name: Spotter vindu
+      node_id: 17
+      power_consumption: 0
+      state: 'off'
+      supported_features: 33
+      value_id: '72057594327957505'
+      value_index: 0
+      value_instance: 1
+    switch.tv_samsung_7_series_75:
+      friendly_name: '[TV] Samsung 7 Series (75)'
+      state: 'off'
+    zwave.everspring_ad147_plugin_dimmer_module:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 36
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 24
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 13
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 187
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:53:39:397 '
+      receivedUnsolicited: 132
+      retries: 5
+      sentCnt: 91
+      sentFailed: 1
+      sentTS: '2020-01-02 16:53:39:361 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_2:
+      application_version: Unknown
+      averageRequestRTT: 34
+      averageResponseRTT: 45
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 16
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 236
+      receivedDups: 7
+      receivedTS: '2020-01-02 16:53:20:213 '
+      receivedUnsolicited: 163
+      retries: 7
+      sentCnt: 115
+      sentFailed: 2
+      sentTS: '2020-01-02 16:53:10:885 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_3:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 37
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 17
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 252
+      receivedDups: 9
+      receivedTS: '2020-01-02 16:53:20:285 '
+      receivedUnsolicited: 177
+      retries: 7
+      sentCnt: 123
+      sentFailed: 0
+      sentTS: '2020-01-02 16:53:10:826 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_4:
+      application_version: Unknown
+      averageRequestRTT: 30
+      averageResponseRTT: 48
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 29
+      lastResponseRTT: 44
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 19
+      - 20
+      - 21
+      node_id: 18
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 223
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:53:19:890 '
+      receivedUnsolicited: 157
+      retries: 2
+      sentCnt: 102
+      sentFailed: 0
+      sentTS: '2020-01-02 16:53:10:513 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_5:
+      application_version: Unknown
+      averageRequestRTT: 27
+      averageResponseRTT: 39
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 39
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 20
+      - 21
+      node_id: 19
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 207
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:53:19:612 '
+      receivedUnsolicited: 150
+      retries: 6
+      sentCnt: 96
+      sentFailed: 0
+      sentTS: '2020-01-02 16:53:10:603 '
+      state: ready
+    zwave.fibaro_system_fgwpe_f_wall_plug_gen5:
+      application_version: Unknown
+      averageRequestRTT: 30
+      averageResponseRTT: 41
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: Oppvaskmaskin
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      node_id: 20
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 171
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:53:19:152 '
+      receivedUnsolicited: 131
+      retries: 5
+      sentCnt: 67
+      sentFailed: 3
+      sentTS: '2020-01-02 16:53:10:699 '
+      state: ready
+    zwave.unknown_node_14:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 37
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 14
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 229
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:53:19:932 '
+      receivedUnsolicited: 161
+      retries: 5
+      sentCnt: 105
+      sentFailed: 1
+      sentTS: '2020-01-02 16:53:10:764 '
+      state: ready
+- id: '1577743609897'
+  name: Lage middag
+  entities:
+    light.fibaro_system_fgd212_dimmer_2_level_15:
+      brightness: 255
+      friendly_name: Taklampe kjøkkenøy
+      node_id: 20
+      power_consumption: 9.3
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594378289153'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_7:
+      brightness: 255
+      friendly_name: Spotter kjøkken
+      node_id: 16
+      power_consumption: 76.9
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594311180289'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_9:
+      brightness: 255
+      friendly_name: Spotter vindu
+      node_id: 17
+      power_consumption: 25.6
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594327957505'
+      value_index: 0
+      value_instance: 1
+    zwave.fibaro_system_fgd212_dimmer_2_2:
+      application_version: Unknown
+      averageRequestRTT: 52
+      averageResponseRTT: 48
+      capabilities:
+      - listening
+      - zwave_plus
+      - routing
+      - beaming
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 46
+      lastResponseRTT: 60
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 16
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 82
+      receivedDups: 0
+      receivedTS: '2019-12-30 23:08:01:391 '
+      receivedUnsolicited: 51
+      retries: 1
+      sentCnt: 48
+      sentFailed: 0
+      sentTS: '2019-12-30 23:05:03:088 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_3:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 36
+      capabilities:
+      - listening
+      - zwave_plus
+      - routing
+      - beaming
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 17
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 76
+      receivedDups: 2
+      receivedTS: '2019-12-30 23:07:24:936 '
+      receivedUnsolicited: 49
+      retries: 1
+      sentCnt: 40
+      sentFailed: 0
+      sentTS: '2019-12-30 23:05:03:367 '
+      state: ready
+    zwave.fibaro_system_fgwpe_f_wall_plug_gen5:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 37
+      capabilities:
+      - listening
+      - zwave_plus
+      - routing
+      - beaming
+      friendly_name: Oppvaskmaskin
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 37
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      node_id: 20
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 90
+      receivedDups: 4
+      receivedTS: '2019-12-30 23:08:10:692 '
+      receivedUnsolicited: 52
+      retries: 16
+      sentCnt: 63
+      sentFailed: 2
+      sentTS: '2019-12-30 23:08:04:321 '
+      state: ready
+- id: '1577747085069'
+  name: Spise middag
+  entities:
+    light.everspring_ad147_plugin_dimmer_module_level:
+      brightness: 57
+      friendly_name: Spot peis
+      node_id: 13
+      power_consumption: 3.3
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594260848641'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_11:
+      brightness: 111
+      friendly_name: Spotter spisestue
+      node_id: 18
+      power_consumption: 11.4
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594344734721'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_13:
+      brightness: 255
+      friendly_name: Taklampe spisestue
+      node_id: 19
+      power_consumption: 11.7
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594361511937'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_15:
+      brightness: 26
+      friendly_name: Taklampe kjøkkenøy
+      node_id: 20
+      power_consumption: 4.2
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594378289153'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_3:
+      brightness: 52
+      friendly_name: Spotter stue
+      node_id: 14
+      power_consumption: 2.4
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594277625857'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_7:
+      brightness: 39
+      friendly_name: Spotter kjøkken
+      node_id: 16
+      power_consumption: 16.6
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594311180289'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_9:
+      brightness: 106
+      friendly_name: Spotter vindu
+      node_id: 17
+      power_consumption: 11.2
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594327957505'
+      value_index: 0
+      value_instance: 1
+    zwave.everspring_ad147_plugin_dimmer_module:
+      application_version: Unknown
+      averageRequestRTT: 25
+      averageResponseRTT: 41
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 37
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 13
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 199
+      receivedDups: 3
+      receivedTS: '2020-01-02 16:56:18:260 '
+      receivedUnsolicited: 139
+      retries: 5
+      sentCnt: 101
+      sentFailed: 1
+      sentTS: '2020-01-02 16:56:18:137 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_2:
+      application_version: Unknown
+      averageRequestRTT: 39
+      averageResponseRTT: 46
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 54
+      lastResponseRTT: 55
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 16
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 248
+      receivedDups: 7
+      receivedTS: '2020-01-02 16:56:06:854 '
+      receivedUnsolicited: 172
+      retries: 7
+      sentCnt: 121
+      sentFailed: 2
+      sentTS: '2020-01-02 16:56:00:998 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_3:
+      application_version: Unknown
+      averageRequestRTT: 70
+      averageResponseRTT: 82
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 93
+      lastResponseRTT: 96
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 17
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 265
+      receivedDups: 10
+      receivedTS: '2020-01-02 16:56:06:901 '
+      receivedUnsolicited: 186
+      retries: 7
+      sentCnt: 129
+      sentFailed: 0
+      sentTS: '2020-01-02 16:56:01:141 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_4:
+      application_version: Unknown
+      averageRequestRTT: 29
+      averageResponseRTT: 44
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 30
+      lastResponseRTT: 44
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 19
+      - 20
+      - 21
+      node_id: 18
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 235
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:56:06:066 '
+      receivedUnsolicited: 166
+      retries: 2
+      sentCnt: 108
+      sentFailed: 0
+      sentTS: '2020-01-02 16:56:00:531 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_5:
+      application_version: Unknown
+      averageRequestRTT: 31
+      averageResponseRTT: 38
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 38
+      lastResponseRTT: 40
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 20
+      - 21
+      node_id: 19
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 219
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:56:06:663 '
+      receivedUnsolicited: 159
+      retries: 6
+      sentCnt: 102
+      sentFailed: 0
+      sentTS: '2020-01-02 16:56:00:640 '
+      state: ready
+    zwave.fibaro_system_fgwpe_f_wall_plug_gen5:
+      application_version: Unknown
+      averageRequestRTT: 31
+      averageResponseRTT: 38
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: Oppvaskmaskin
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 27
+      lastResponseRTT: 37
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      node_id: 20
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 182
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:56:06:300 '
+      receivedUnsolicited: 138
+      retries: 6
+      sentCnt: 74
+      sentFailed: 3
+      sentTS: '2020-01-02 16:56:00:792 '
+      state: ready
+    zwave.unknown_node_14:
+      application_version: Unknown
+      averageRequestRTT: 38
+      averageResponseRTT: 62
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 24
+      lastResponseRTT: 38
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 14
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 242
+      receivedDups: 7
+      receivedTS: '2020-01-02 16:56:06:630 '
+      receivedUnsolicited: 170
+      retries: 5
+      sentCnt: 111
+      sentFailed: 1
+      sentTS: '2020-01-02 16:56:00:900 '
+      state: ready
+- id: '1577747104292'
+  name: Sofa
+  entities:
+    light.everspring_ad147_plugin_dimmer_module_level:
+      brightness: 26
+      friendly_name: Spot peis
+      node_id: 13
+      power_consumption: 2.8
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594260848641'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_11:
+      brightness: 67
+      friendly_name: Spotter spisestue
+      node_id: 18
+      power_consumption: 4.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594344734721'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_13:
+      brightness: 3
+      friendly_name: Taklampe spisestue
+      node_id: 19
+      power_consumption: 4.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594361511937'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_15:
+      brightness: 13
+      friendly_name: Taklampe kjøkkenøy
+      node_id: 20
+      power_consumption: 3.9
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594378289153'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_3:
+      brightness: 75
+      friendly_name: Spotter stue
+      node_id: 14
+      power_consumption: 3.7
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594277625857'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_7:
+      brightness: 3
+      friendly_name: Spotter kjøkken
+      node_id: 16
+      power_consumption: 10.5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594311180289'
+      value_index: 0
+      value_instance: 1
+    light.fibaro_system_fgd212_dimmer_2_level_9:
+      brightness: 26
+      friendly_name: Spotter vindu
+      node_id: 17
+      power_consumption: 5
+      state: 'on'
+      supported_features: 33
+      value_id: '72057594327957505'
+      value_index: 0
+      value_instance: 1
+    zwave.everspring_ad147_plugin_dimmer_module:
+      application_version: Unknown
+      averageRequestRTT: 24
+      averageResponseRTT: 36
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 13
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 191
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:53:56:105 '
+      receivedUnsolicited: 135
+      retries: 5
+      sentCnt: 93
+      sentFailed: 1
+      sentTS: '2020-01-02 16:53:50:623 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_2:
+      application_version: Unknown
+      averageRequestRTT: 25
+      averageResponseRTT: 38
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 16
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 244
+      receivedDups: 7
+      receivedTS: '2020-01-02 16:54:08:111 '
+      receivedUnsolicited: 169
+      retries: 7
+      sentCnt: 119
+      sentFailed: 2
+      sentTS: '2020-01-02 16:54:02:338 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_3:
+      application_version: Unknown
+      averageRequestRTT: 70
+      averageResponseRTT: 68
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 77
+      lastResponseRTT: 93
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 17
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 261
+      receivedDups: 10
+      receivedTS: '2020-01-02 16:54:08:186 '
+      receivedUnsolicited: 183
+      retries: 7
+      sentCnt: 127
+      sentFailed: 0
+      sentTS: '2020-01-02 16:54:02:502 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_4:
+      application_version: Unknown
+      averageRequestRTT: 29
+      averageResponseRTT: 45
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 29
+      lastResponseRTT: 45
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 19
+      - 20
+      - 21
+      node_id: 18
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 231
+      receivedDups: 5
+      receivedTS: '2020-01-02 16:54:07:945 '
+      receivedUnsolicited: 163
+      retries: 2
+      sentCnt: 106
+      sentFailed: 0
+      sentTS: '2020-01-02 16:54:01:771 '
+      state: ready
+    zwave.fibaro_system_fgd212_dimmer_2_5:
+      application_version: Unknown
+      averageRequestRTT: 25
+      averageResponseRTT: 37
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 37
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 20
+      - 21
+      node_id: 19
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 215
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:54:07:624 '
+      receivedUnsolicited: 156
+      retries: 6
+      sentCnt: 100
+      sentFailed: 0
+      sentTS: '2020-01-02 16:54:01:878 '
+      state: ready
+    zwave.fibaro_system_fgwpe_f_wall_plug_gen5:
+      application_version: Unknown
+      averageRequestRTT: 49
+      averageResponseRTT: 39
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: Oppvaskmaskin
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 42
+      lastResponseRTT: 52
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 14
+      - 16
+      - 17
+      - 18
+      - 19
+      - 21
+      node_id: 20
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 179
+      receivedDups: 2
+      receivedTS: '2020-01-02 16:54:07:903 '
+      receivedUnsolicited: 136
+      retries: 5
+      sentCnt: 71
+      sentFailed: 3
+      sentTS: '2020-01-02 16:54:02:060 '
+      state: ready
+    zwave.unknown_node_14:
+      application_version: Unknown
+      averageRequestRTT: 60
+      averageResponseRTT: 87
+      capabilities:
+      - zwave_plus
+      - beaming
+      - listening
+      - routing
+      friendly_name: FIBARO System FGD212 Dimmer 2
+      is_awake: true
+      is_failed: false
+      is_info_received: true
+      is_ready: true
+      is_zwave_plus: true
+      lastRequestRTT: 25
+      lastResponseRTT: 36
+      manufacturer_name: FIBARO System
+      max_baud_rate: 40000
+      neighbors:
+      - 1
+      - 10
+      - 11
+      - 13
+      - 16
+      - 17
+      - 18
+      - 19
+      - 20
+      - 21
+      node_id: 14
+      node_name: FIBARO System FGD212 Dimmer 2
+      product_name: FGD212 Dimmer 2
+      query_stage: Complete
+      receivedCnt: 237
+      receivedDups: 6
+      receivedTS: '2020-01-02 16:54:07:851 '
+      receivedUnsolicited: 166
+      retries: 5
+      sentCnt: 109
+      sentFailed: 1
+      sentTS: '2020-01-02 16:54:02:238 '
+      state: ready

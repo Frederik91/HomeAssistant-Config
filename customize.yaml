@@ -1,0 +1,8 @@
+group.all_lights:
+  icon: mdi:lightbulb
+device_tracker.oneplus_6:
+  friendly_name: Signe-Elise
+device_tracker.galaxy_s8:
+  friendly_name: Frederik
+zwave.fibaro_system_fgwpe_f_wall_plug_gen5_2:
+  friendly_name: Persienne vei

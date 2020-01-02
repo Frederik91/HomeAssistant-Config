@@ -1,0 +1,99 @@
+input_number:
+    alarm_1_hour:
+        name: Timer (arbeidsdager)
+        icon: mdi:timer
+        min: 0
+        max: 23
+        step: 1
+    alarm_1_minutes:
+        name: Minutter (arbeidsdager)
+        icon: mdi:timer
+        min: 0
+        max: 59
+        step: 1
+    alarm_2_hour:
+        name: Timer (helg/helligdag)
+        icon: mdi:timer
+        min: 0
+        max: 23
+        step: 1
+    alarm_2_minutes:
+        name: Minutter (helg/helligdag)
+        icon: mdi:timer
+        min: 0
+        max: 59
+        step: 1
+    alarm_1_offset:
+        name: Oppvåkning
+        icon: mdi:blur-linear
+        min: 10
+        max: 60
+        step: 1
+    alarm_1_volume:
+        name: Volum
+        icon: mdi:volume-high
+        min: 0
+        max: 100
+        step: 1
+
+input_boolean:
+    alarm_1_weekday:
+        name: Hverdager
+        icon: mdi:calendar
+    alarm_1_weekend:
+        name: Helg
+        icon: mdi:calendar
+    alarm_1_soundnow:
+        name: Start nå
+        icon: mdi:alarm
+        
+sensor:
+    - platform: time_date
+      display_options:
+        - 'time'
+    - platform: template
+      sensors:
+         alarm_1_time:
+              friendly_name: 'Alarmtid (arbeidsdag)'
+              value_template: >-
+                  {{ "%0.02d:%0.02d" | format(states("input_number.alarm_1_hour") | int, states("input_number.alarm_1_minutes") | int) }}
+    - platform: template
+      sensors:
+         alarm_1_time_minus_offset:
+              friendly_name: 'Oppvåkningstid (arbeidsdag)'
+              value_template: >-
+                  {{ '%0.02d:%0.02d' | format( ((((states('input_number.alarm_1_hour') | int)*60 + (states('input_number.alarm_1_minutes') | int) - (states('input_number.alarm_1_offset'))| int)/60)| int),(((((((((states('input_number.alarm_1_hour') | int)*60 + (states('input_number.alarm_1_minutes') | int) - (states('input_number.alarm_1_offset')) | int)/60)) - ((((states('input_number.alarm_1_hour') | int)*60 + (states('input_number.alarm_1_minutes') | int) - (states('input_number.alarm_1_offset')) | int)/60)| int))*100) | int)*60/100) | round) ) }}
+    - platform: time_date
+      display_options:
+        - 'time'
+    - platform: template
+      sensors:
+         alarm_2_time:
+              friendly_name: 'Alarmtid (helg/helligdag)'
+              value_template: >-
+                  {{ "%0.02d:%0.02d" | format(states("input_number.alarm_2_hour") | int, states("input_number.alarm_2_minutes") | int) }}
+    - platform: template
+      sensors:
+         alarm_2_time_minus_offset:
+              friendly_name: 'Oppvåkningstid (helg/helligdag)'
+              value_template: >-
+                  {{ '%0.02d:%0.02d' | format( ((((states('input_number.alarm_2_hour') | int)*60 + (states('input_number.alarm_2_minutes') | int) - (states('input_number.alarm_1_offset'))| int)/60)| int),(((((((((states('input_number.alarm_2_hour') | int)*60 + (states('input_number.alarm_2_minutes') | int) - (states('input_number.alarm_1_offset')) | int)/60)) - ((((states('input_number.alarm_2_hour') | int)*60 + (states('input_number.alarm_2_minutes') | int) - (states('input_number.alarm_1_offset')) | int)/60)| int))*100) | int)*60/100) | round) ) }}
+
+
+group:
+    alarm_1:
+        name: Vekk meg
+        entities:
+            - sensor.alarm_1_time
+            - sensor.alarm_1_time_minus_offset
+            - input_number.alarm_1_hour
+            - input_number.alarm_1_minutes
+            - sensor.alarm_2_time
+            - sensor.alarm_2_time_minus_offset
+            - input_number.alarm_2_hour
+            - input_number.alarm_2_minutes
+            - input_number.alarm_1_offset
+            - input_number.alarm_1_volume
+            - input_boolean.alarm_1_weekday
+            - input_boolean.alarm_1_weekend
+            - input_boolean.alarm_1_soundnow

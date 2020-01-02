@@ -1,0 +1,6 @@
+switch.fibaro_system_fgwpe_f_wall_plug_gen5_switch_4:
+  ignored: false
+  polling_intensity: 0
+switch.fibaro_system_fgwpe_f_wall_plug_gen5_switch_5:
+  ignored: false
+  polling_intensity: 0

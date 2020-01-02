@@ -1,0 +1,16 @@
+watch_tv:
+  alias: Skru på stue TV
+  sequence:
+  - alias: Sku på tv
+    service: remote.turn_on
+    data:
+      entity_id: remote.awesome_harmony_hub
+      activity: Watch Smart TV
+turn_tv_off:
+  alias: Skru av stue TV
+  sequence:
+  - alias: Sku på tv
+    service: remote.turn_on
+    data:
+      entity_id: remote.awesome_harmony_hub
+      activity: PowerOff

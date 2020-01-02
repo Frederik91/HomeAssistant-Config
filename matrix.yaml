@@ -1,0 +1,47 @@
+# Be aware that this file contains options that could potentially break the add-on.
+# Make sure you know what you are doing before editing this file!
+server_name: tegster.asuscomm.com
+pid_file: /homeserver.pid
+federation_ip_range_blacklist:
+- 127.0.0.0/8
+- 10.0.0.0/8
+- 172.16.0.0/12
+- 192.168.0.0/16
+- 100.64.0.0/10
+- 169.254.0.0/16
+- ::1/128
+- fe80::/64
+- fc00::/7
+listeners:
+- port: 8448
+  tls: true
+  type: http
+  x_forwarded: true
+  resources:
+  - names:
+    - client
+    - federation
+    compress: false
+  bind_addresses:
+  - 0.0.0.0
+acme:
+  account_key_file: /acme_account.key
+database:
+  name: sqlite3
+  args:
+    database: /share/matrix/matrix.db
+log_config: /data/matrix/tegster.asuscomm.com.log.config
+media_store_path: /share/matrix/media
+uploads_path: /share/matrix/uploads
+registration_shared_secret: ft;4wEC~=SgZhq&JlTfm_yMvz7MLbV7O2~pqU^#~SQI8.KjSjP
+report_stats: false
+macaroon_secret_key: jSB-nbMq^09uDZGUN+n7NZsyMUreizbCfvrQkcV~;FHifP*Gz1
+form_secret: iFhLqiO-DYdQaH-9SK;.66SmT-g,LN-SI:I;JBCwNB9svyoOsb
+signing_key_path: /data/matrix/tegster.asuscomm.com.signing.key
+password_config: null
+opentracing: null
+enable_registration: true
+max_upload_size: 200M
+no_tls: false
+tls_certificate_path: /ssl/fullchain.pem
+tls_private_key_path: /ssl/privkey.pem

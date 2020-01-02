@@ -1,0 +1,69 @@
+- platform: yr
+  name: Weather
+  forecast: 24
+  monitored_conditions:
+    - temperature
+    - symbol
+    - precipitation
+    - windSpeed
+    - pressure
+    - windDirection
+    - humidity
+    - fog
+    - cloudiness
+    - lowClouds
+    - mediumClouds
+    - highClouds
+    - dewpointTemperature
+    
+- platform: time_date
+  display_options:
+    - 'time'
+    - 'date'
+    - 'date_time'
+    - 'time_date'
+    - 'time_utc'
+    - 'beat'
+
+- platform: template
+  sensors:
+    power_noob_circuit:
+      value_template: "{{ ((states('sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_10') | float) + (states('sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_12') | float) + (states('sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_8') | float) + (states('sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_14') | float) + (states('sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_16') | float)) | round(1) }}"
+      friendly_name: 'Effekt noobkurs'
+      unit_of_measurement: 'W'
+
+- platform: template
+  sensors:
+    temperatur_kontor_frederik:
+      friendly_name: "Temperatur kontor Frederik"
+      unit_of_measurement: '°C'
+      value_template: >
+        {% if states.climate.ovn_gang_kjeller %}
+          {{ state_attr('climate.panelovn_1', 'current_temperature') }}
+        {% else %}
+          ??
+        {% endif %}
+        
+- platform: template
+  sensors:
+    temperatur_gang_kjeller:
+      friendly_name: "Temperatur gang kjeller"
+      unit_of_measurement: '°C'
+      value_template: >
+        {% if states.climate.ovn_gang_kjeller %}
+          {{ state_attr('climate.ovn_gang_kjeller', 'current_temperature') }}
+        {% else %}
+          ??
+        {% endif %}
+        
+- platform: template
+  sensors:
+    varmeovn_gang_kjeller_state:
+      friendly_name: "Temperatur gang kjeller"
+      unit_of_measurement: '°C'
+      value_template: >
+        {% if states.climate.ovn_gang_kjeller %}
+          {{ state_attr('climate.ovn_gang_kjeller', 'heating') }}
+        {% else %}
+          0
+        {% endif %}

@@ -1,0 +1,222 @@
+homeassistant:
+  # Name of the location where Home Assistant is running
+  name: Home
+  # Location required to calculate the time the sun rises and sets
+  latitude: !secret latitude
+  longitude: !secret longitude
+  # Impacts weather/sunrise data (altitude above sea level in meters)
+  elevation: 102
+  # metric for Metric, imperial for Imperial
+  unit_system: metric
+  # Pick yours from here: http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+  time_zone: Europe/Oslo
+  # Customization file
+  customize: !include customize.yaml
+  packages:
+    alarm_1: !include alarm.yaml
+
+zwave:
+  usb_path: /dev/ttyACM0
+  network_key: '0xB9, 0x1E, 0x48, 0xF2, 0xD1, 0x7D, 0xE3, 0xA3, 0xF9, 0xA5, 0x65, 0x25, 0x37, 0x46, 0x17, 0x60'
+
+# Enables the frontend
+frontend:
+  themes: !include themes.yaml
+
+nissan_leaf:
+    username: !secret nissan_username
+    password: !secret nissan_password
+    region: 'NE'
+
+binary_sensor:
+  - platform: workday
+    country: 'NO'
+    name: Arbeidsdager
+  - platform: workday
+    country: 'NO'
+    days_offset: 1
+    name: I morgen er arbeidsdag
+#  - platform: ring
+
+notify:
+  - name: Frederik
+    platform: pushbullet
+    api_key: !secret pushbullet_api_key_frederik
+  - name: Signe
+    platform: pushbullet
+    api_key: !secret pushbullet_api_key_signe
+  - platform: html5
+    name: Google
+    vapid_pub_key: !secret html5_pub_key
+    vapid_prv_key: !secret html5_priv_key
+    vapid_email: !secret frederik_email
+
+homeconnect:
+  client_id: !secret homeconnect_client_id
+  client_secret: !secret homeconnect_client_secret
+
+system_health:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+http:
+  base_url: !secret base_url
+  server_port: 8040
+  #ssl_certificate: /etc/letsencrypt/live/tegster.asuscomm.com/fullchain.pem
+  #ssl_key: /etc/letsencrypt/live/tegster.asuscomm.com/privkey.pem
+  ssl_certificate: /ssl/fullchain.pem
+  ssl_key: /ssl/privkey.pem
+   
+
+# Checks for available updates
+# Note: This component will send some information about your system to
+# the developers to assist with development of Home Assistant.
+# For more information, please see:
+# https://home-assistant.io/blog/2016/10/25/explaining-the-updater/
+updater:
+  # Optional, allows Home Assistant developers to focus on popular components.
+  # include_used_components: true
+
+# Discover some devices automatically
+discovery:
+
+# Allows you to issue voice commands from the frontend in enabled browsers
+conversation:
+
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+device_tracker:
+  - platform: nmap_tracker
+    hosts:
+      - 192.168.1.186
+      - 192.168.1.50
+      
+# Track the sun
+sun:
+
+input_boolean:
+    disable_power_manager:
+        name: Deaktiver kursstyring
+        icon: mdi:power-plug
+
+climate:
+  - platform: mill
+    username: !secret frederik_email
+    password: !secret mill_password
+
+neato:
+  username: !secret frederik_email
+  password: !secret neato_password
+
+ring:
+  username: !secret frederik_email
+  password: !secret ring_password
+
+# Text to speech
+tts:
+  - platform: google_translate
+    service_name: google_say
+  
+media_player:
+  - platform: spotify
+    client_id: !secret spotify_client_id
+    client_secret: !secret spotify_client_secret
+  
+influxdb:
+  host: a0d7b954-influxdb
+  port: 8086
+  database: homeassistant
+  username: homeassistant
+  password: !secret influx_password
+  max_retries: 3
+  default_measurement: state  
+  
+tradfri:
+  host: 192.168.1.89
+  allow_tradfri_groups: true
+
+weather:
+  - platform: openweathermap
+    api_key: !secret openweathermap_api_key
+
+# Cloud
+cloud:
+  google_actions:
+    filter:
+      include_domains:
+        - switch
+        - light
+      include_entities:
+        - climate.thermofloor_as_heatit_thermostat_tf_021_heating
+        - cover.fibaro_system_fgrm223_roller_shutter_controller_3_level
+      exclude_entities:
+        - switch.qubino_zmnhdd1_flush_dimmer_switch
+        - switch.qubino_zmnhdd1_flush_dimmer_switch_2
+        - switch.qubino_zmnhdd1_flush_dimmer_switch_3
+        - switch.lys_overskap
+        - light.tradfri_bulb_gu10_w_400lm_3
+        - light.tradfri_bulb_gu10_w_400lm
+        - light.tradfri_bulb_gu10_w_400lm_2
+        - light.tradfri_bulb_e14_ws_opal_400lm
+        - light.tradfri_bulb_e14_ws_opal_400lm_2
+        - light.tradfri_bulb_e14_ws_opal_400lm_3
+        - light.tradfri_bulb_e14_ws_opal_400lm_4
+        - light.tradfri_bulb_e14_ws_opal_400lm_5
+        - light.stuelys
+        
+camera:
+  - platform: ring
+
+downloader:
+  download_dir: downloads
+  
+sensor:
+  - platform: ring
+  
+switch:
+  - platform: ring
+
+group: !include groups.yaml
+automation: !include automations.yaml
+script: !include scripts.yaml
+light: !include lights.yaml
+sensor: !include sensors.yaml
+remote: !include remotes.yaml
+scene: !include scenes.yaml
+
+recorder:
+  purge_keep_days: 5
+  purge_interval: 1
+  include:
+    entities:
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_10
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_12
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_8
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_14
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_16
+      - sensor.fibaro_system_fgwpe_f_wall_plug_gen5_power_18
+      - sensor.aeon_labs_zw100_multisensor_6_temperature
+      - sensor.weather_temperature
+      - sensor.temperatur_gang_kjeller
+      - sensor.temperatur_kontor_frederik
+  exclude:
+    domains:
+      - updater
+      - camera
+      - media_player
+      - sun
+      - zone
+      - group
+      - sensor
+      - binary_sensor
+      - automation
+      - calendar
